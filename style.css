@@ -1,0 +1,95 @@
+/* Police */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Merienda+One&display=swap');
+
+/* Variables */
+
+:root{
+    /* Couleurs*/
+    --noir : #000000;
+    --orange : #ff8a00;
+    --footer : #252424;
+    --blanc : white;
+        /* Police*/
+    --Police-corp : 'Cabin', sans-serif;
+    --police-titre : 'Merienda One', cursive;
+}
+
+/* Bases */
+
+html, body {
+    font-family: var(--Police-corp);
+    font-size: 16px;
+    font-weight: 400;
+    background-color : var(--noir);
+    margin: 0;
+    padding: 0;
+    color: var(--blanc)
+}
+
+h1,h2 {
+    font-family: var(--police-titre);
+}
+
+h1{
+    color: var(--orange);
+    font-size: 5rem;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+h2{
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+header section{
+display: block;
+height: 10rem;
+padding-bottom: 2rem;
+}
+
+header div{
+    text-align: center;
+    vertical-align: middle;
+}
+
+header img{
+    height: 10rem;
+    float: left;
+    margin-left: 10rem;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+    background-color: var(--orange);
+    padding: 0.8rem;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: var(--blanc);
+    font-family: var(--police-titre);
+    font-size: 1.3rem;
+    transition: all 0.5s ease-in-out;
+    padding: 0.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header ul li a:hover{
+    background-color: #d37000;
+    color: var(--noir);
+}
+
+.active{
+    background-color: var(--footer) ;
+    color: var(--orange);
+}
