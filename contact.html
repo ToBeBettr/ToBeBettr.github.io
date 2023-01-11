@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Be Better</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <section>
-        <img src="/Images/logo.png" alt="logo 2B+" />
-        <div>
-          <h1>To Be Better</h1>
-          <h2>Développez vos compétences !</h2>
-        </div>
-      </section>
-      <!--Barre de navigation-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Be Better</title>
+  <link rel="shortcut icon" href="/Images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <section>
+      <img src="/Images/logo.png" alt="logo 2B+" />
+      <div>
+        <h1>To Be Better</h1>
+        <h2>Développez vos compétences !</h2>
+      </div>
+    </section>
+    <!--Barre de navigation-->
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="formations.html">Nos formations</a></li>
+      <li><a href="qui.html">Qui sommes-nous ?</a></li>
+      <li><a href="confiance.html">Ils nous font confiance</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </header>
+  <main class="cont">
+    <form class="formulaire">
+      <label for="nom">Nom</label>
+      <input type="text" placeholder="Votre nom" name="nom" required class="text">
+      <label for="prénom">Prénom</label>
+      <input type="text" placeholder="Votre prénom" name="prénom" required class="text">
+      <label for="E-mail">E-mail</label>
+      <input type="text" placeholder="votre adresse E-mail" name="E-mail" required class="text">
+      <label for="message">Message</label>
+      <textarea name="message" class="message" required spellcheck="true"></textarea>
+      <input type="submit" class="envoyer">
+    </form>
+    <div class="reseaux">
+      <p>Restons en contact</p>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="formations.html">Nos formations</a></li>
-        <li><a href="qui.html">Qui sommes-nous ?</a></li>
-        <li><a href="confiance.html">Ils nous font confiance</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="https://fr-fr.facebook.com/" target="_blank"><img src="/Images/Facebook-icon-1.png"
+              alt="logo fb"></a></li>
+        <li><a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="/Images/Instagram-Icon.png"
+              alt="logo insta"></a></li>
+        <li><a href="https://fr.linkedin.com/" target="_blank"><img src="/Images/linkedin.png" alt="logo linkedin"></a>
+        </li>
+        <li><a href="https://twitter.com/?lang=fr" target="_blank"><img src="/Images/1492693505-1-twitter_83571.png"
+              alt="logo twitter"></a></li>
       </ul>
-    </header>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li class="Mention">
+        <p>
+          To Be Better &copy; 2023 <br>
+          <a href="http://www.staggeringbeauty.com/" target="_blank">Mentions légales</a> / <a
+            href="https://cat-bounce.com/" target="_blank">Politique
+            de
+            protection de données</a> / <a href="https://i.giphy.com/media/sMc1LmhLLA3q1EEFa6/giphy.webp"
+            target="_blank">CGV</a>
+        </p>
+      </li>
+      <li class="mail">
+        <p>
+          <a href="mailto:contact@2bb.com">contact@2bb.com</a><br>
+          04 80 81 82 83
+        </p>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>

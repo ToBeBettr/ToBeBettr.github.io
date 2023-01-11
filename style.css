@@ -8,7 +8,7 @@
     /* Couleurs*/
     --noir : #000000;
     --orange : #ff8a00;
-    --footer : #252424;
+    --footer : #131313;
     --blanc : white;
         /* Police*/
     --Police-corp : 'Cabin', sans-serif;
@@ -27,7 +27,7 @@ html, body {
     color: var(--blanc)
 }
 
-h1,h2 {
+h1,h2,h3 {
     font-family: var(--police-titre);
 }
 
@@ -41,7 +41,7 @@ h1{
 
 h2{
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 header section{
@@ -92,4 +92,236 @@ header ul li a:hover{
 .active{
     background-color: var(--footer) ;
     color: var(--orange);
+}
+
+.logo{
+    float: right;
+}
+
+.texte{
+width: 40%;
+margin-left: 4rem;
+font-size: 1.5rem;
+text-align: justify;
+}
+
+h3{
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.texte hr{
+    margin-bottom: 2rem;
+    border: 0px transparent;
+}
+
+footer{
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+    background-color: var(--footer);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+.mention{
+    display: block;
+    width: 30%;
+    text-align: left;
+}
+
+.mail{
+    width: 30%;
+    text-align: right;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#formation{
+    max-width: 40%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#formation img{
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.form{
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.form div{
+    width: 40%;
+}
+
+.form div hr{
+    width: 75%;
+    border-color: var(--orange);
+}
+
+.form ul{
+    list-style-type: none;
+}
+
+.form ul li:before{
+    content: "\2022";
+    margin-right: 10px;
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+
+.qui{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Images/clonage-adn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5rem;
+    padding: 2rem 15rem;
+    margin: 0;
+}
+
+.qui hr{
+    border: 0px transparent;
+}
+
+.confiance img{
+    float: right;
+    width: 90%;
+}
+
+.confiance hr{
+    margin-bottom: 2rem;
+    border: 0px transparent;
+}
+
+.confiance{
+    font-size: 1.5rem;
+    padding: 4rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.confiance div{
+    width: 60%;
+}
+
+#texte{
+    width: 40%;
+}
+
+.confiance ul li:before{
+    content: "\2022";
+    margin-right: 10px;
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+
+.confiance ul{
+    list-style-type: none;
+}
+
+.formulaire{
+    width: 20rem;
+    margin-left: 4rem;
+    padding-bottom: 5rem;
+    margin-top: 4rem;
+    transition: 0.5s ease-in-out;
+}
+
+.text, .message{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.35rem;
+    padding: 0.5rem;
+    background-color: rgb(224, 224, 224);
+    border: 0 solid transparent;
+}
+
+.text:focus, .message:focus{
+    background-color: white;
+}
+
+.message{
+    height: 8rem;
+    resize: none;
+}
+.formulaire label{
+    color: var(--orange);
+}
+
+.envoyer{
+    float: right;
+    background-color: var(--orange);
+    border-radius: 0.75rem;
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.envoyer:hover{
+    background-color: #af6108;
+    color: var(--blanc);
+}
+
+.envoyer:active{
+    transform: scale(0.9);
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cont img{
+    width: 7rem;
+    border-radius: 0.9rem;
+}
+
+.reseaux{
+    text-align: center;
+    width: 50rem;
+    padding-top: 4rem;
+    font-size: 2rem;
+}
+
+.reseaux ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20rem;
+}
+
+.cont img:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.cont img:active{
+    transform: scale(0.8);
 }
