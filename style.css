@@ -1,21 +1,21 @@
-/* Police */
+/*** Polices ***/
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Merienda+One&display=swap');
 
-/* Variables */
+/*** Variables ***/
 
 :root{
-    /* Couleurs*/
+    /*** Couleurs***/
     --noir : #000000;
     --orange : #ff8a00;
     --footer : #131313;
     --blanc : white;
-        /* Police*/
+        /* Polices*/
     --Police-corp : 'Cabin', sans-serif;
     --police-titre : 'Merienda One', cursive;
 }
 
-/* Bases */
+/*** Bases ***/
 
 html, body {
     font-family: var(--Police-corp);
@@ -30,6 +30,8 @@ html, body {
 h1,h2,h3 {
     font-family: var(--police-titre);
 }
+
+/*** Header ***/
 
 h1{
     color: var(--orange);
@@ -71,6 +73,7 @@ header ul{
 	align-items: center;
     background-color: var(--orange);
     padding: 0.8rem;
+    height: 1.8rem;
 }
 
 header ul li a{
@@ -98,23 +101,7 @@ header ul li a:hover{
     float: right;
 }
 
-.texte{
-width: 40%;
-margin-left: 4rem;
-font-size: 1.5rem;
-text-align: justify;
-}
-
-h3{
-    font-size: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.texte hr{
-    margin-bottom: 2rem;
-    border: 0px transparent;
-}
+/*** Footer***/
 
 footer{
     padding-left: 1.5rem;
@@ -147,6 +134,38 @@ footer ul{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+/*** Accueil ***/
+
+.accueil{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.accueil img{
+    object-fit: scale-down;
+}
+
+.texte{
+width: 100%;
+margin-left: 4rem;
+font-size: 1.5rem;
+text-align: justify;
+}
+
+h3{
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.texte hr{
+    margin-bottom: 2rem;
+    border: 0px transparent;
+}
+
+/*** Formations ***/
 
 #formation{
     max-width: 40%;
@@ -190,6 +209,8 @@ footer ul{
     font-size: 1.5rem;
 }
 
+/*** Qui sommes nous ***/
+
 .qui{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Images/clonage-adn.jpg);
     background-repeat: no-repeat;
@@ -202,6 +223,8 @@ footer ul{
 .qui hr{
     border: 0px transparent;
 }
+
+/*** Ils nous font confiance ***/
 
 .confiance img{
     float: right;
@@ -241,6 +264,8 @@ footer ul{
     list-style-type: none;
 }
 
+/*** contact ***/
+
 .formulaire{
     width: 20rem;
     margin-left: 4rem;
@@ -277,7 +302,7 @@ footer ul{
     background-color: var(--orange);
     border-radius: 0.75rem;
     width: 50%;
-    padding: 10px;
+    padding: 0.7rem;
     cursor: pointer;
 }
 
@@ -294,6 +319,7 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 1.5rem;
 }
 
 .cont img{
@@ -324,4 +350,110 @@ footer ul{
 
 .cont img:active{
     transform: scale(0.8);
+}
+
+/*** partie responsive ***/
+
+@media screen and (max-width: 1200px) {
+    header img{
+        height: 7rem;
+        margin-left: 2rem;
+    }
+    header section{
+        height: 6rem;
+    }
+    h1{
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    header ul{
+    height: 1.1rem;
+    }
+    header ul li a{
+        font-size: 0.8rem;
+    }
+    .accueil img{
+        width: 20rem;
+        object-fit: scale-down;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .texte{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 810px) {
+    html, body {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    html, body {
+        font-size: 8px;
+    }
+    .accueil img{
+        width: 100%;
+        object-fit: scale-down;
+        padding-left: 7rem;
+        }
+    .accueil{
+        padding-right: 6rem;
+        padding-left: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+    .texte{
+        font-size: 2rem;
+    }
+    header ul li a{
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        font-size: 1.2rem;
+    }
+    header ul{
+        height: 1.8rem;
+        }
+        .cont{
+            font-size: 1rem;
+        }
+        .envoyer{
+            font-size: 0.9rem;
+        }
+        .cont{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 1.5rem;
+            align-items: center;
+        }
+        .reseaux{
+            width: 100%;
+        }
+        .formulaire{
+            margin-left: 0;
+        }
+
+        .confiance{
+            flex-direction: column;
+            align-items: center;
+        }
+        .confiance div{
+            width: 80%;
+        }
+        .qui{
+            padding: 8rem 6rem;
+        }
+        .qui hr{
+            padding-bottom: 2rem;
+        }
 }
